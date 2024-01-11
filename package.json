@@ -1,0 +1,26 @@
+{
+    "name": "qtdoc-templates",
+    "displayName": "Qt Documentation Templates",
+    "description": "Templates for creating Qt related documentation eg: tutorial, howto",
+    "publisher": "tqtc",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.65.0"
+    },
+    "categories": ["Snippets"],
+    "contributes": {
+      "languages": [{
+        "id": "qdoc",
+        "aliases": ["QDoc", "qdoc"],
+        "extensions": [".qdoc", ".qdocinc"],
+        "configuration": "./language-configuration.json"
+      }],
+      "snippets": [
+        {
+          "language": "qdoc",
+          "path": "./snippets/qtdoc.code-snippets"
+        }
+      ]
+    }
+  }
+
